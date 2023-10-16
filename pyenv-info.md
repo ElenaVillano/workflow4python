@@ -2,6 +2,23 @@
 
 Un ambiente virtual es una herramienta que ayuda a mantener separadas las dependencias requeridas por diferentes proyectos mediante la creación de ambientes virtuales con versiones de Python aislados para ellos. 
 
+
+
+For the virtual machine:
+```
+sudo apt-get update
+```
+
+then install: 
+```
+sudo apt-get install build-essential
+```
+
+
+```
+pyenv install -l
+```
+
 ## ¿Por qué necesitamos un ambiente virtual? 
 
 Imagine un escenario en el que está trabajando en dos proyectos Python y uno de ellos usa Pandas 1.9 y el otro usa Pandas 1.10. En tales situaciones, el ambiente virtual puede ser realmente útil para mantener las dependencias de ambos proyectos. En particular, los ambientes virtuales son soluciones simples que: 
