@@ -4,17 +4,6 @@ Un ambiente virtual es una herramienta que ayuda a mantener separadas las depend
 
 
 
-For the virtual machine:
-```
-sudo apt-get update
-```
-
-then install: 
-```
-sudo apt-get install build-essential
-```
-
-
 ```
 pyenv install -l
 ```
