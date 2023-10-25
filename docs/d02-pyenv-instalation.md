@@ -1,8 +1,16 @@
-# Ambientes virtuales
+# Python and Virtual Environments
 
-Un ambiente virtual es una herramienta que ayuda a mantener separadas las dependencias requeridas por diferentes proyectos mediante la creación de ambientes virtuales con versiones de Python aislados para ellos. 
+A virtual environment is a tool that isolates your Python development projects from your system installed Python and other Python environments. This gives you full control of your project and makes it easily reproducible. 
 
 
+
+- Requirements for Ubuntu:
+
+```
+sudo apt update; sudo apt install build-essential libssl-dev zlib1g-dev \
+libbz2-dev libreadline-dev libsqlite3-dev curl \
+libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
+```
 
 ```
 pyenv install -l
@@ -22,13 +30,13 @@ La instalación de pyenv solo será necesario hacerlo una única vez al inicio d
 
 1. Situarse sobre el directorio raíz.
 
-```{bash}
+```
 cd 
 ```
 
 2. Clonar el repo de pyenv.
 
-```{bash}
+```
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 ```
 
