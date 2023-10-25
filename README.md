@@ -1,15 +1,23 @@
-# Virtual Environments with Python
+# Workflow for Python
 
-- How to use this code:
+#### By Elena Villalobos Nolasco 
+
+Repository of showing good ways to manage python, ensuring good practices and reproducibility.
 
 
-- Vagrant machine:
+### Vagrant machine
 
-
-- Requirements for Ubuntu:
+If you don't want to mess up with your OS you can try all of this in a virtual machine:
 
 ```
-sudo apt update; sudo apt install build-essential libssl-dev zlib1g-dev \
-libbz2-dev libreadline-dev libsqlite3-dev curl \
-libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
+vagrant init generic/ubuntu2204
 ```
+
+```
+vagrant up
+```
+
+```
+vagrant ssh
+```
+
