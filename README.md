@@ -1,7 +1,8 @@
-
-[<img src="https://centroi.org/wp-content/uploads/2021/05/logo-EGobiernoyTP-Tec-de-Monterrey-1280x327.png" width="300" align="right"/>](https://egobiernoytp.tec.mx/)
+[<img src="https://centroi.org/wp-content/uploads/2021/05/logo-EGobiernoyTP-Tec-de-Monterrey-1280x327.png" width="250" align="right"/>](https://egobiernoytp.tec.mx/)
 
 # Workflow for Python
+
+----
 
 #### By Elena Villalobos Nolasco 
 
