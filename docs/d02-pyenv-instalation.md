@@ -4,7 +4,7 @@ A virtual environment is a tool that isolates your Python development projects f
 
 [<img src="https://www.dataquest.io/wp-content/uploads/2022/01/python-virtual-envs1-1024x576.webp" width="800"/>](https://www.dataquest.io/blog/a-complete-guide-to-python-virtual-environments/#:~:text=NOTE%20A%20Python%20project%20folder,in%20a%20virtual%20environment%20folder.)
 
-### Why do we need Virtual Environments?
+## Why do we need Virtual Environments?
 
 1. They solve dependency problems allowing to use different versions of a package. For example, using the package A v2.7 for project X and the package A v1.3 for the project Y. 
 2. They allow that each project is independent and reproducible capturing all the dependencies of the packages in one requirement files. 
@@ -14,12 +14,45 @@ A virtual environment is a tool that isolates your Python development projects f
 
 Python virtual environments create isolated contexts to keep dependencies required by different projects separate so they don't interfere with other projects or system-wide packages. Basically, setting up virtual environments is the best way to isolate different Python projects, especially if these projects have different and conflicting dependencies. As a piece of advice for new Python programmers, always set up a separate virtual environment for each Python project, and install all the required dependencies inside it — never install packages globally.
 
-### Virtualenv vs pyenv, which one to use?
+## Virtualenv vs pyenv, which one to use?
 
-- [**Pyenv**](https://github.com/pyenv/pyenv): Switch easily between multiple version of python.
-- **Virtualenv**:  
+### [Virtualenv](https://pypi.org/project/virtualenv/)
 
-- Requirements for Ubuntu:
+Creates different virtual environments in the Python version of your system and has a very simple instalation.
+
+#### Instalation
+
+```
+pip install virtualenv
+```
+
+Create a virtual environment
+
+```
+virtualenv <my_env_name>
+```
+
+Activate virtualenv
+
+```
+source <my_env_name>/bin/activate
+```
+
+Deactivate
+
+```
+deactivate
+```
+
+
+### [Pyenv](https://github.com/pyenv/pyenv)
+
+Switch easily between multiple **versions of python** and virtual environments. 
+
+
+#### Instalation
+
+0. Requirements for Ubuntu:
 
 ```
 sudo apt update; sudo apt install build-essential libssl-dev zlib1g-dev \
@@ -27,74 +60,66 @@ libbz2-dev libreadline-dev libsqlite3-dev curl \
 libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
 ```
 
-```
-pyenv install -l
-```
-
-## ¿Por qué necesitamos un ambiente virtual? 
-
-Imagine un escenario en el que está trabajando en dos proyectos Python y uno de ellos usa Pandas 1.9 y el otro usa Pandas 1.10. En tales situaciones, el ambiente virtual puede ser realmente útil para mantener las dependencias de ambos proyectos. En particular, los ambientes virtuales son soluciones simples que: 
-
-
-
-## Instalar pyenv
-
-La instalación de pyenv solo será necesario hacerlo una única vez al inicio de tu set up de bastión. 
-
-1. Situarse sobre el directorio raíz.
+1. Be sure to be at the root of your computer: 
 
 ```
 cd 
 ```
 
-2. Clonar el repo de pyenv.
+2. Clone the pyenv repository
 
 ```
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 ```
 
-3. Configurar el entorno de la terminal para hacer uso de pyenv. Aquí se define la variable de entorno PYENV_ROOT para que apunte a la RUTA donde Pyenv almacenará sus datos. $HOME/.pyenv es la RUTA predeterminada:
+3. Set up your shell environment for Pyenv. Define environment variable `PYENV_ROOT` to point to the path where Pyenv will store its data. `$HOME/.pyenv` is the default.
 
 ```
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
 ```
 
-4. Agregar el ejecutable pyenv a la RUTA.
+4. Add the pyenv executable to your `PATH`:
 
 ```
 echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
 ```
 
-5. Escribir los siguientes argumentos dentro del archivo ~/.bashrc. 
-*NOTA: Ejecutar `eval $(pyenv init -)` para instalar pyenv en su shell como una función de shell, habilite shims y autocompletado. Puedes ejecutar `eval "$(pyenv init --path)"` en su lugar para habilitar shims, sin integración de shell.*
+5. Write this additional comment on the ~/.bashrc file. 
 
 ```
 echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.bashrc 
 ```
 
-6. Reinicia la terminal:
+6. Restart your sheel:
 ```
 exec "$SHELL"
 ```
 
-7. Clonar pyenv-virtualenv:
+7. Clone pyenv-virtualenv:
 
 ```
 git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
 ```
-8. Escribir inicialización de pyenv en ~/.bashrc:
+
+8. More into your ~/.bashrc file:
 
 ```
 echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc 
 ```
 
-9. Reiniciar de nuevo la terminal:
+9. Restart your sheel:
 
 ```
 exec "$SHELL"
 ```
 
-Con estos 9 pasos ya tendrás instalado pyenv. 
+10. Check instalation: 
+
+```
+pyenv install -l
+```
+
+
 
 ## Instalar un ambiente virtual con una versión de Python específica. 
 
@@ -139,6 +164,8 @@ nano .python-version
 ```
 
 Se guardan modificaciones con ^X y cierras el archivo.
+
+
 
 
 ##### Extra: Activar y desactivar un pyenv de manera manual
