@@ -1,6 +1,6 @@
 # Workflow for Python
 
-[<img src="https://centroi.org/wp-content/uploads/2021/05/logo-EGobiernoyTP-Tec-de-Monterrey-1280x327.png" width="800"/>](https://egobiernoytp.tec.mx/)
+[<img src="https://centroi.org/wp-content/uploads/2021/05/logo-EGobiernoyTP-Tec-de-Monterrey-1280x327.png" width="300"/>](https://egobiernoytp.tec.mx/)
 
 #### By Elena Villalobos Nolasco 
 
