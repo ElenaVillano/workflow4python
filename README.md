@@ -15,6 +15,13 @@ To show you good practices and reproducibility when working with Python.
 
 Look for the lessons in the docs folder.
 
+### PYTHONPATH 
+
+```
+export PYTHONPATH=$PWD
+```
+
+
 ### Vagrant machine
 
 If you don't want to mess up your setup, you can try all of this on a virtual machine:
