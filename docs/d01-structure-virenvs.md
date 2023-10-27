@@ -1,8 +1,12 @@
 # Python Workflow
 
-## Objective
 
-To show you good practices and reproducibility when working with Python.
+#### Some questions: 
+
+- How to build a better Workflow?
+- Which are the best practices?
+- How to make sure that others can test my code?
+- How can I collaborate better with others?
 
 ## Virtual Environments
 
