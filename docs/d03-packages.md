@@ -57,4 +57,5 @@ cat requirements.txt
 - Scientific computing: Scipy 
 - Notebooks: Jupyter*
 - Interactive python: IPython*
+- Interface to JAGS: pyjags
 
