@@ -1,4 +1,4 @@
-# How to work with users and credentials 
+# How to work with access information
 
 A suggested place to store credentials, keys or tokens to access either an API, a DB, or a bucket is in `config/local/credentials.yaml`.
 
