@@ -1,8 +1,12 @@
-Where to store the credentials to access either an API, a DB, or a bucket most be store in a way that the structure is share but everyone has their own credentials. 
+# How to work with users and credentials 
 
-It is suggested to keep this accesses in a file inside `config/local/credentials.yaml`.
+A suggested place to store credentials, keys or tokens to access either an API, a DB, or a bucket is in `config/local/credentials.yaml`.
 
-You most follow this structure for the credentials.yaml file:
+In this file, you store the information to access some service required in your Python pipeline. This file doesn't upload to the repository because it is placed at the `.gitignore` file. The idea is that all collaborators have their own access keys, but you all have the same structure to run the code.
+
+Be carefull never uploading the credentials file and always have in your repository a `.gitignore` file. 
+
+The structure for the credentials.yaml file:
 
 ```
 ---
@@ -21,6 +25,5 @@ api:
 ```
 
 
-
-The function to call this credentials is for everyone, and it is keep in `src/utils/general.py`.
+The function to call this credentials is keep in `src/utils/general.py`.
 
