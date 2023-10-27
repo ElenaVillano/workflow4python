@@ -16,9 +16,9 @@ To edit code you can use whichever editor you want to use. The important point i
 
 # Git and branches
 
-Whenever you want to collaborate in a repo, make a new branch and work independently in that branch. Then you can merge de changes.
+Whenever you want to collaborate in a repo, make a new branch and work independently in that branch. Then you can merge the changes.
 
-Also, the idea is that if you are going to collaborate to the main branch do it in a cleaner way, just changing one or two files so the person that is managing the repo can detect easily the new code that you want to implement. 
+Also, the idea is that if you are going to collaborate to the main branch, do it in a cleaner way just changing one or two files so the person that is managing the repo can detect easily the new code that you want to implement. 
 
 ```
 git switch <branch>
