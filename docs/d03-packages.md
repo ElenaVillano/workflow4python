@@ -42,3 +42,19 @@ cat requirements.txt
 ```
 
 
+## Some packages:
+
+- Linear algebra, matrix operation: Numpy
+- Data analysis: Pandas
+- Data Base connection: sqlalchemy, psycopg2-binary
+- Buckets s3: boto3
+- APIs: Flask, Django
+- Distributed computing: PySpark
+- Graphics, visualiztion: Matplotlib*, Seaborn*, Plotly
+- Machine learning: scikit-learn*
+- DeepLearning: PyTorch, TensorFlow
+- NLP: nltk, 
+- Scientific computing: Scipy 
+- Notebooks: Jupyter*
+- Interactive python: IPython*
+
