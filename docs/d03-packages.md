@@ -41,6 +41,26 @@ See the file:
 cat requirements.txt
 ```
 
+### [Pip-chill](https://pypi.org/project/pip-chill/)
+
+It is like `pip freeze` but lists only the packages that are not dependencies of installed packages.
+
+
+- Instalation: 
+```
+pip install pip-chill
+```
+
+
+- Try it: 
+
+```
+pip-chill
+```
+
+Pay attention with the requirements file that you share with others. 
+
+
 
 ## Some packages:
 
