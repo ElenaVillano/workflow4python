@@ -11,8 +11,9 @@ pip install notebook
 
 # Code
 
-To edit code you can use whichever editor you want to use. The important point is that whenever you run the code, you do it from the terminal with your virtual environment activated. The importan thing is to follow the [pep8](https://peps.python.org/pep-0008/) rules.
+To edit code you can use whichever editor you want to use. The important point is that whenever you run the code, you do it from the terminal with your virtual environment activated. 
 
+- To code in Python use [PEP8](https://peps.python.org/pep-0008/). The guidelines provided here are intended to improve the readability of code and make it consistent across the wide spectrum of Python code: “Readability counts”.
 
 # Git and branches
 
