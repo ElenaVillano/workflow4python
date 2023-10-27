@@ -2,19 +2,22 @@
 
 .
 
-# Workflow for Python
-
-
+# Workshop: Workflow for Python
 
 #### By Elena Villalobos Nolasco 
 
 
-Repository of showing good ways to manage python, ensuring good practices and reproducibility.
+### Objective: 
 
+To show you good practices and reproducibility when working with Python.
+
+### Repo structure:
+
+Look for the lessons at docs folder.
 
 ### Vagrant machine
 
-If you don't want to mess up with your OS you can try all of this in a virtual machine:
+If you don't want to mess up with your setup you can try all of this in a virtual machine:
 
 ```
 vagrant init generic/ubuntu2204
