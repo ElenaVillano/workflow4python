@@ -70,12 +70,12 @@ Pay attention with the requirements file that you share with others.
 - Buckets s3: boto3
 - APIs: Flask, Django
 - Distributed computing: PySpark
-- Graphics, visualiztion: Matplotlib*, Seaborn*, Plotly
-- Machine learning: scikit-learn*
+- Graphics, visualiztion: Matplotlib, Seaborn, Plotly
+- Machine learning: scikit-learn
 - DeepLearning: PyTorch, TensorFlow
 - NLP: nltk, 
 - Scientific computing: Scipy 
-- Notebooks: Jupyter*
-- Interactive python: IPython*
+- Notebooks: Jupyter
+- Interactive python: IPython
 - Interface to JAGS: pyjags
 
