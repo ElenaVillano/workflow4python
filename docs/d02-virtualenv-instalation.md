@@ -1,6 +1,13 @@
-## [Virtualenv](https://pypi.org/project/virtualenv/)
+# [Virtualenv](https://pypi.org/project/virtualenv/)
 
 Creates different virtual environments in the Python version of your system and has a very simple instalation.
+
+## Requirements
+
+```
+sudo apt install python3-pip python3-virtualenv
+```
+
 
 #### Instalation
 
