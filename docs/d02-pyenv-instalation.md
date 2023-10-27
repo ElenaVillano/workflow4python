@@ -1,56 +1,9 @@
-# Python and Virtual Environments
-
-A virtual environment is a tool that isolates your Python development projects from your system installed Python and other Python environments. This gives you full control of your project and makes it easily reproducible. Any changes on dependencies installed in a virtual environment won't affect the dependencies of other virtual environments or system-wide libraries.
-
-[<img src="https://www.dataquest.io/wp-content/uploads/2022/01/python-virtual-envs1-1024x576.webp" width="800"/>](https://www.dataquest.io/blog/a-complete-guide-to-python-virtual-environments/#:~:text=NOTE%20A%20Python%20project%20folder,in%20a%20virtual%20environment%20folder.)
-
-## Why do we need Virtual Environments?
-
-1. They solve dependency problems allowing to use different versions of a package. For example, using the package A v2.7 for project X and the package A v1.3 for the project Y. 
-2. They allow that each project is independent and reproducible capturing all the dependencies of the packages in one requirement files. 
-3. The facilitate the order of the site-package global directory, because they eliminate the necesity of installing packages in the main system, when you might just require it for one project. The other use case that magnifies the importance of using Python virtual environments is when you’re working on managed servers or production environments where you can’t modify the system-wide packages because of specific requirements.
-4. This would lead to compatibility issues because Python cannot simultaneously use multiple versions of the same package.
-
-
-Python virtual environments create isolated contexts to keep dependencies required by different projects separate so they don't interfere with other projects or system-wide packages. Basically, setting up virtual environments is the best way to isolate different Python projects, especially if these projects have different and conflicting dependencies. As a piece of advice for new Python programmers, always set up a separate virtual environment for each Python project, and install all the required dependencies inside it — never install packages globally.
-
-## Virtualenv vs pyenv, which one to use?
-
-### [Virtualenv](https://pypi.org/project/virtualenv/)
-
-Creates different virtual environments in the Python version of your system and has a very simple instalation.
-
-#### Instalation
-
-```
-pip install virtualenv
-```
-
-Create a virtual environment
-
-```
-virtualenv <my_env_name>
-```
-
-Activate virtualenv
-
-```
-source <my_env_name>/bin/activate
-```
-
-Deactivate
-
-```
-deactivate
-```
-
-
-### [Pyenv](https://github.com/pyenv/pyenv)
+# [Pyenv](https://github.com/pyenv/pyenv)
 
 Switch easily between multiple **versions of python** and virtual environments. 
 
 
-#### Instalation
+## Instalation
 
 0. Requirements for Ubuntu:
 
@@ -120,64 +73,59 @@ pyenv install -l
 ```
 
 
+### Create a virtual environment with an especific Python version. 
 
-## Instalar un ambiente virtual con una versión de Python específica. 
-
-1. Primero instalamos el Python con el que trabajaremos, en este caso estamos utilizando la versión 3.8.6, pero ésta puede cambiar dependiendo de las necesidades del proyecto. 
+1. Example installing python 3.8.6: 
 
 ```
 pyenv install 3.8.6
 ```
 
-2. Crear un ambiente virtual. Por cada proyecto en el cuál se esté involucrado, es recomendable crear un ambiente virtual.
+2. Create a virtualenv with a python version.
 
 ```
 pyenv virtualenv 3.8.6 <nombre_ambiente>
 ```
 
-3. Verifica que instalaste bien tu pyenv con la siguiente línea que enlista todos los ambientes que tienes:
+3. Verify your instalation
 
 ```
 pyenv virtualenvs
 ```
 
-## Activar y desactivar un pyenv de manera automática
+## Activate y deactivate a pyenv automatically
 
-Dentro del archivo `.python-version` solo colocas el nombre del ambiente virtual que quieres que se active por default en el directorio correspondiente al proyecto. Para hacer este archivo:  
+Create a `.python-version` file and write the name of the virtualenv that you created. 
 
-1. Situarse en el directorio raíz del proyecto:
+1. Go to the root of the project: 
 
 ```
-cd <nombre_repositorio>
+cd <repository-name>
 ```
 
-2. Editar el archivo `.python-version`:
+2. Edit the `.python-version` file:
 
 ```
 nano .python-version
 ```
 
-3. Dentro del archivo solo escribes:
+3. Write the name of the virtualenv:
 
 ```
-<nombre_ambiente>
+<environment-name>
 ```
 
-Se guardan modificaciones con ^X y cierras el archivo.
+4. You'll see how whenever you get into that folder the environment is going to be activated. The recomendation is to create a virtual environment for each project that you have. Example of your virtualenvs. 
 
 
+##### Extra: Activate and deactivate a pyenv in a manual way. 
 
-
-##### Extra: Activar y desactivar un pyenv de manera manual
-
-Para activar un ambiente virtual tienes que situarte en el proyecto de interés y activar ambiente virtual.
 
 ```
-pyenv activate <nombre_ambiente>
+pyenv activate <environment-name>
 ```
 
-y para desactivarlo es con: 
 
 ```
-pyenv deactivate <nombre_ambiente>
+pyenv deactivate  <environment-name>
 ```
